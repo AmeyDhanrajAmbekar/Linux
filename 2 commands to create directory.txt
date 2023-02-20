@@ -1,0 +1,20 @@
+1) to create single directory 
+
+# mkdir <directory_name>
+       --- to create directory
+# ls
+       --- to check
+
+----------------------------------------------------
+2) to create multiple directories
+
+# mkdir -p dir1 dir2 dir3
+
+
+----------------------------------------------------
+3) to create directories with directory
+
+# mkdir -p dir1/dir2/dir3
+
+# tree 
+      ----(to check directories)
