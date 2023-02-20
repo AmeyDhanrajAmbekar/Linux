@@ -1,0 +1,32 @@
+1. cat
+   cat file_name       (to show file content)
+   cat > file_name     (to create / overwrite file content)
+   cat >> file_name    (to append (add to existing contend))
+   tac file_name       (to show file content from inverted (from last line to first line in that order)
+
+--------------------------------------------------------------------------------------------------------
+
+2. touch
+   touch file_name   (to create a file & also update time stamps of metadata ()
+   touch -a          (to update time stamp of access-time)
+   touch -m          (to update time stamp of file modified)
+
+   stat file-name    (to check time stamps)
+
+---------------------------------------------------------------------------------------------------------
+
+3. vi (vim)
+   vi file_name      (press "i") (to create file & read, write, edit file)
+                     (press "esc")
+                     (and then options)
+                     (:w    to save)
+                     (:wq  or  :x   to save & quit)
+                     (:q     to quit)
+                     (:q!    to force quit)
+
+----------------------------------------------------------------------------------------------------------
+
+4. nano 
+   nano file_name    (ctrl + enter, shift + y.   to save and exit)
+   
+   also, varies options available at bottom when you enter file file nano)
