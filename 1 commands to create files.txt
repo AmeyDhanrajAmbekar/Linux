@@ -30,3 +30,10 @@
    nano file_name    (ctrl + enter, shift + y.   to save and exit)
    
    also, varies options available at bottom when you enter file file nano)
+
+----------------------------------------------------------------------------------------------------------
+
+5. echo
+   echo "string or content_to_be_written" > file_name        (creates a file & wirtes the content in between " " or also can overwrite the file)
+   
+   echo "data_to_be_append" >> file_name   ( '>>' is use to append the data in existing file)
