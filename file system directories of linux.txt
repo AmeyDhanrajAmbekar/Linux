@@ -1,0 +1,9 @@
+/home = home directory for other users
+/root = home directory for root user
+/usr = default folder for saving packages (software)
+/opt = optional folder for saving packages
+/etc = contains the configuration (ram, hdd, sdd, graphics) files
+/dev = contains configurations files for devices like usb, switches, etc or any devices attached to the system
+/boot = contains the system bootable files
+/bin = contains the commands used by all users. Also user binaries, executable files, Linux commands that are used in single user mode, and common commands that are used by all the users, like cat, cp, cd, ls, etc.  (/bin = binaries)
+/sbin = contain the commands, binaries and executable files for root user.
