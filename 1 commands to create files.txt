@@ -1,7 +1,7 @@
 1. cat
    cat file_name       (to show file content)
    cat > file_name     (to create / overwrite file content)
-   cat >> file_name    (to append (add to existing content))
+   cat >> file_name    (to append (add to existing contend))
    tac file_name       (to show file content from inverted (from last line to first line in that order)
 
 --------------------------------------------------------------------------------------------------------
