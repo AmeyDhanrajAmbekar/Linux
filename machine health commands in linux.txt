@@ -1,0 +1,11 @@
+
+  
+Command	               Description
+top	                Displays system processes and their resource usage in real-time.
+free         	       Shows the amount of free and used memory in the system.
+vmstat	           Reports statistics about virtual memory, system processes, and CPU usage.
+sar	                Collects, reports, and saves system activity data.
+df	                Shows the disk space usage of file systems.
+dmesg	           Displays the system's kernel messages.
+systemctl status	  Shows the status of systemd units, including running services and their health.
+
