@@ -1,0 +1,32 @@
+linux commands for user add/del
+
+useradd <user_name>
+
+        --- to add a user
+
+passwd <user_name>
+
+        --- to create a password for that user
+
+groupadd <user_name>
+
+        --- to create a group
+
+gpasswd -a <user_name> <group_name>
+
+        --- to add a particular user to a particular group
+
+gpasswd -d <user_name> <group_name>
+
+        --- to remove a particular user from the group
+
+userdel <user_name>
+
+        --- to delete the user
+
+groupdel <user_name>
+
+        --- to delete the group
+
+
+
