@@ -1,0 +1,15 @@
+Some read commands 
+
+less <file_name>
+       --- shows first page of the file
+more 
+       --- shows next page of the file
+
+head <file_name>
+       --- shows first 10 lines of the file
+
+tail <file_name>
+       --- shows last 10 lines of the file
+
+sort <file_name>
+       --- sorts all the files alphabetically
