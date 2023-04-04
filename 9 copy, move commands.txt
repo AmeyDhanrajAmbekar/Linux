@@ -1,0 +1,11 @@
+linux copy, move commands
+
+cp source_file.txt destination_file.txt
+              --- to copy from source file to destination file
+
+
+mv file_one  /user/directory/
+              --- to move the file
+
+mv file_one  file_two
+              -- to rename the file
