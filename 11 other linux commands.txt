@@ -1,0 +1,54 @@
+Linux commands
+
+tree <file_name>
+      --- shows all the files and directories in a  sophisticated manner
+
+ifconfig
+      --- shows configuration details, etc like ip
+
+curl ifconfig.me
+      --- shows public ip
+
+sudo hostname <name> 
+bash
+      --- to change the hostname
+
+whoami
+      --- shows the username
+
+which <name>
+      --- to search file/package 
+
+whereis <name>
+      --- to search file/package path
+
+cat /etc/os-release
+      --- to view about hostmachine details
+
+grep <file> /path
+      --- to catch a particular file/info from a given path
+
+ln <file_name>
+      --- to create a hardlink of file
+
+ln -s <file_name>
+      --- to create a softlink of a file
+
+wget <url>
+      --- to download soemthing from an url
+
+du -h 
+      ---  to see size of a file
+
+ls 
+   - list
+
+ls -l 
+      - list, long list
+
+ls -a
+       - list hidden files and directories
+
+ls -al 
+       - long list all files and directories
+
