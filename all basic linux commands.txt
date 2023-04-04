@@ -1,0 +1,297 @@
+linux commands to create file
+
+1. cat
+   cat file_name       (to show file content)
+   cat > file_name     (to create / overwrite file content)
+   cat >> file_name    (to append (add to existing contend))
+   tac file_name       (to show file content from inverted (from last line to first line in that order)
+
+--------------------------------------------------------------------------------------------------------
+
+2. touch
+   touch file_name   (to create a file & also update time stamps of metadata ()
+   touch -a          (to update time stamp of access-time)
+   touch -m          (to update time stamp of file modified)
+
+   stat file-name    (to check time stamps)
+
+---------------------------------------------------------------------------------------------------------
+
+3. vi (vim)
+   vi file_name      (press "i") (to create file & read, write, edit file)
+                     (press "esc")
+                     (and then options)
+                     (:w    to save)
+                     (:wq  or  :x   to save & quit)
+                     (:q     to quit)
+                     (:q!    to force quit)
+
+----------------------------------------------------------------------------------------------------------
+
+4. nano 
+   nano file_name    (ctrl + enter, shift + y.   to save and exit)
+   
+   also, varies options available at bottom when you enter file file nano)
+
+----------------------------------------------------------------------------------------------------------
+
+5. echo
+   echo "string or content_to_be_written" > file_name        (creates a file & wirtes the content in between " " or also can overwrite the file)
+   
+   echo "data_to_be_append" >> file_name   ( '>>' is use to append the data in existing file)
+
+
+linux commands to create directories -------------------------------------------------------------------------
+
+1) to create single directory 
+
+# mkdir <directory_name>
+       --- to create directory
+# ls
+       --- to check
+
+----------------------------------------------------
+2) to create multiple directories
+
+# mkdir -p dir1 dir2 dir3
+
+
+----------------------------------------------------
+3) to create directories with directory
+
+# mkdir -p dir1/dir2/dir3
+
+# tree 
+      ----(to check directories)
+
+commands to delete and remove ------------------------------------------------------------------------
+
+rm -rf <file_name/ directory_name>
+       --- f = forcefully
+
+rmdir -p <directory_name>
+       --- to remove directory
+
+rmdir -p  dir1/dir2/dir3
+
+
+Some read commands ----------------------------------------------------------
+
+less <file_name>
+       --- shows first page of the file
+more 
+       --- shows next page of the file
+
+head <file_name>
+       --- shows first 10 lines of the file
+
+tail <file_name>
+       --- shows last 10 lines of the file
+
+sort <file_name>
+       --- sorts all the files alphabetically
+
+
+installing and updating commands --------------------------------------------------------
+
+in Rhel
+
+sudo yum update -y
+             --- to update 
+
+sudo yum install <package_name> -y
+             --- to install apache webserver
+
+sudo yum update <package_name> -y
+             --- to update the already installed package
+
+sudo yum remove <package_name> -y 
+             --- to remove/delete package
+
+yum list installed
+             --- lists the installed packages
+
+
+in Debian/ubuntu  just replace 'yum' with 'apt' 
+
+   here, 
+        yum = yellow dog updater, modified
+        apt = advanced package tool
+
+these are the linux service commands ----------------------------------------------------
+
+
+service <package_name> status
+              --- to view the status of the package installed
+
+service <package_name> start
+              --- to start the service of the package
+
+service <package_name> stop
+              --- to stop the service of the package
+
+
+systemctl enable <package_name>
+              --- to enable the service to start automatically when restarted
+
+linux commands for user add/del -----------------------------------------------------------------------------
+
+useradd <user_name>
+
+        --- to add a user
+
+passwd <user_name>
+
+        --- to create a password for that user
+
+groupadd <user_name>
+
+        --- to create a group
+
+gpasswd -a <user_name> <group_name>
+
+        --- to add a particular user to a particular group
+
+gpasswd -d <user_name> <group_name>
+
+        --- to remove a particular user from the group
+
+userdel <user_name>
+
+        --- to delete the user
+
+groupdel <user_name>
+
+        --- to delete the group
+
+linux file related commands -------------------------------------------------------------------------------------
+
+
+tar -cvf file_name.tar  file
+         --- to compress make a .tar file 
+         -(dir.tar =  .tar file)
+         -(dir = source file)
+         -(c= create, v=verbosefully, f= forcefully)
+
+gzip file_name.tar
+         --- to zip the file
+
+tar -xvf file.tar 
+         --- to un-tar file
+
+gunzip file_name.gz
+         --- to un-zip the file 
+
+linux copy, move commands  ------------------------------------------------------------------------------------
+
+cp source_file.txt destination_file.txt
+              --- to copy from source file to destination file
+
+
+mv file_one  /user/directory/
+              --- to move the file
+
+mv file_one  file_two
+              -- to rename the file
+
+
+linux owner permissions commands  --------------------------------------------------------------------------------------------
+
+if you do ls -l
+
+machine gives you list of file and directories in the long list format with all details
+
+it looks like this
+
+drwxr_xr__ 1 root root 6 may10 05:01 directory_name
+
+here,
+d - means directory
+r- read 
+w- write
+x- execute
+
+root is owner, group is owner 
+
+also,
+values
+r = 4, w = 2, x = 1
+
+also,
+u = user
+g = group
+o = others
+
+commands =>
+***
+
+chmod u=rwx, g=r, o=r
+
+        --- here, user has read, write, execute permissions. group has read permissions, others have reaad command
+
+
+other basic Linux commands ----------------------------------------------------------------------------------------------
+
+tree <file_name>
+      --- shows all the files and directories in a  sophisticated manner
+
+ifconfig
+      --- shows configuration details, etc like ip
+
+curl ifconfig.me
+      --- shows public ip
+
+sudo hostname <name> 
+bash
+      --- to change the hostname
+
+whoami
+      --- shows the username
+
+which <name>
+      --- to search file/package 
+
+whereis <name>
+      --- to search file/package path
+
+cat /etc/os-release
+      --- to view about hostmachine details
+
+grep <file> /path
+      --- to catch a particular file/info from a given path
+
+ln <file_name>
+      --- to create a hardlink of file
+
+ln -s <file_name>
+      --- to create a softlink of a file
+
+wget <url>
+      --- to download soemthing from an url
+
+du -h 
+      ---  to see size of a file
+
+ls 
+   - list
+
+ls -l 
+      - list, long list
+
+ls -a
+       - list hidden files and directories
+
+ls -al 
+       - long list all files and directories
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
