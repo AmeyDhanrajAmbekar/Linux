@@ -1,0 +1,18 @@
+linux file related commands
+
+
+tar -cvf file_name.tar  file
+         --- to compress make a .tar file 
+         -(dir.tar =  .tar file)
+         -(dir = source file)
+         -(c= create, v=verbosefully, f= forcefully)
+
+gzip file_name.tar
+         --- to zip the file
+
+tar -xvf file.tar 
+         --- to un-tar file
+
+gunzip file_name.gz
+         --- to un-zip the file 
+
