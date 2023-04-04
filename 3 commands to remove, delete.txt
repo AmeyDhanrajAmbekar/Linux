@@ -1,0 +1,11 @@
+commands to delete and remove
+
+rm -rf <file_name/ directory_name>
+       --- f = forcefully
+
+rmdir -p <directory_name>
+       --- to remove directory
+
+rmdir -p  dir1/dir2/dir3
+
+  here, -p = parent directory
