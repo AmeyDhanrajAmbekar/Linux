@@ -1,0 +1,25 @@
+installing and updating commands
+
+in Rhel
+
+sudo yum update -y
+             --- to update 
+
+sudo yum install <package_name> -y
+             --- to install apache webserver
+
+sudo yum update <package_name> -y
+             --- to update the already installed package
+
+sudo yum remove <package_name> -y 
+             --- to remove/delete package
+
+yum list installed
+             --- lists the installed packages
+
+
+in Debian/ubuntu  just replace 'yum' with 'apt' 
+
+   here, 
+        yum = yellow dog updater, modified
+        apt = advanced package tool
