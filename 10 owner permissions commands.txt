@@ -1,0 +1,34 @@
+linux owner permissions commands
+
+if you do ls -l
+
+machine gives you list of file and directories in the long list format with all details
+
+it looks like this
+
+drwxr_xr__ 1 root root 6 may10 05:01 directory_name
+
+here,
+d - means directory
+r- read 
+w- write
+x- execute
+
+root is owner, group is owner 
+
+also,
+values
+r = 4, w = 2, x = 1
+
+also,
+u = user
+g = group
+o = others
+
+commands =>
+***
+
+chmod u=rwx, g=r, o=r
+
+        --- here, user has read, write, execute permissions. group has read permissions, others have reaad command
+
