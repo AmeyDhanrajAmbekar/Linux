@@ -1,0 +1,16 @@
+these are the linux service commands
+
+
+service <package_name> status
+              --- to view the status of the package installed
+
+service <package_name> start
+              --- to start the service of the package
+
+service <package_name> stop
+              --- to stop the service of the package
+
+
+systemctl enable <package_name>
+              --- to enable the service to start automatically when restarted
+
